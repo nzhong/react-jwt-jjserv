@@ -30,7 +30,7 @@ public class MyServletContainer extends ServletContainer {
 		}
 
 		if ( loginUser == null ) { // user is not authenticated, we may need to throw exception
-			if ( request.getRequestURI().indexOf("/login")<0 && !request.getRequestURI().equals("/") ) {
+			if ( request.getRequestURI().indexOf("/api/login")<0 && request.getRequestURI().startsWith("/api/") ) {
 				throw new ServletException("Invalid authentication when accessing "+request.getRequestURI());
 			}
 		}

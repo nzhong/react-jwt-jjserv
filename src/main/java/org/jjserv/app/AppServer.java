@@ -26,7 +26,7 @@ public class AppServer {
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.setContextPath("/");
 
-        ServletHolder jerseyServlet = context.addServlet(MyServletContainer.class, "/*");
+        ServletHolder jerseyServlet = context.addServlet(MyServletContainer.class, "/api/*");
         jerseyServlet.setInitOrder(0);
         jerseyServlet.setInitParameter("jersey.config.server.provider.packages","org.jjserv.rest.controllers");
 

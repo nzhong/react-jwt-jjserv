@@ -2,7 +2,7 @@ var React = require('react');
 
 const Welcome = React.createClass({
     componentDidMount: function() {
-      var apiUrl = '/test';
+      var apiUrl = '/api/test';
       $.ajax({
 	      url: apiUrl,
 	      dataType: 'json',
@@ -28,4 +28,3 @@ const Welcome = React.createClass({
 module.exports = {
     module: Welcome
 }
-

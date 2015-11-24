@@ -3,7 +3,7 @@ var React = require('react');
 module.exports = {
     module: React.createClass({
         handleSubmit : function(e) {
-            var loginUrl = '/login';
+            var loginUrl = '/api/login';
             e.preventDefault();
             var username = this.refs.username.value.trim();
             var password = this.refs.password.value.trim();
@@ -45,4 +45,3 @@ module.exports = {
         }
     })
 }
-
