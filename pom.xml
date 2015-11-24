@@ -90,6 +90,7 @@
                                     </manifestEntries>
                                 </transformer>
                             </transformers>
+                            <finalName>app</finalName>
                         </configuration>
                     </execution>
                 </executions>

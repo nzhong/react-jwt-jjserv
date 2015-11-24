@@ -28,10 +28,12 @@ How to run?
 * ```webpack ```
 <br />
 This will generate bundle.js in the src/main/resources/webapps/HTML/ directory, which test.html will use.
-
 * ```cd ../../../../../```
 * ```mvn clean package```
-* ```java -jar target/jj-server-1.0-SNAPSHOT.jar```
+* ```java -jar target/app.jar```
 
-* Point browser to:
-* http://localhost:6060/static/test.html  
+* Point browser to: http://localhost:6060/static/test.html  
+* use one of the following to login
+* guest/welcome
+* hello/world
+* world/peace
